@@ -1,6 +1,6 @@
 angular.module('video-player')
   .service('youTube', function($http) {
-    this.getVideos = function(query, callback) {
+    this.search = function(query, callback) {
       options = {
         q: query,
         part: 'snippet',
