@@ -1,10 +1,11 @@
 <div class="search-bar form-inline">
   <input 
-  ng-model="input"
+  ng-model="$ctrl.input"
+  ng-change="$ctrl.searchApi($ctrl.input)"
   class="form-control" 
   type="text" />
   <button 
-  ng-click="search"
+  ng-click="$ctrl.searchApi($ctrl.input)"
   class="btn">
     <span class="glyphicon glyphicon-search"></span>
   </button>
