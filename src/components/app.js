@@ -15,6 +15,6 @@ angular.module('video-player')
       };
       this.click = this.click.bind(this);
       this.search = this.search.bind(this);
-      youTube.getVideos('rick astley', this.search);
+      youTube.getVideos('rick roll', this.search);
     }
   });

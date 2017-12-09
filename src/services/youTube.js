@@ -9,15 +9,10 @@ angular.module('video-player')
         type: 'video',
         key: window.YOUTUBE_API_KEY
       };
-      params = {
-        part: 'snippet',
-        key: window.YOUTUBE_API_KEY
-      };
       $http({
         method: 'GET',
         url: 'https://www.googleapis.com/youtube/v3/search',
-        params: options,
-        //data: options
+        params: options
       }).then(function successCallback(response) {
         console.log('success');
         console.log('success', response.data.items);
